@@ -1,1 +1,28 @@
-/target/
+### --- Java/Maven 核心 ---
+# 编译后的字节码文件（这是最该忽略的，因为 4S 上可以现场编）
+target/
+*.class
+
+# 日志文件
+*.log
+
+### --- IntelliJ IDEA 专属 ---
+# 本地配置文件，包含你的 SDK 路径（防止你 Mac 上的 JDK 路径传到 Linux 上报错）
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# 排除 IDEA 自动生成的运行配置
+out/
+
+### --- 操作系统/临时文件 ---
+# Mac 系统的缓存文件
+.DS_Store
+# Windows 的缩略图
+Thumbs.db
+
+### --- 极客工具专属 ---
+# 如果你以后用 Arthas 导出了 heapdump，记得别传到 Git 里，太大了
+*.hprof
+*.bin
