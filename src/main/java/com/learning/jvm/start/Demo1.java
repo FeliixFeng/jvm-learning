@@ -1,4 +1,4 @@
-package com.learning.jvm;
+package com.learning.jvm.start;
 
 public class Demo1 {
     public static void main(String[] args) {
